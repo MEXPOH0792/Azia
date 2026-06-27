@@ -83,6 +83,11 @@
     #heroVideo { display: none !important; }
     * { transition-duration: .001ms !important; }
   }
+
+  .hero { min-height: 86vh; }
+  @media (max-width: 760px) {
+    .hero { min-height: 100vh; min-height: 100svh; }
+  }
 </style>
 </head>
 <body>
@@ -121,7 +126,8 @@
   <!-- ===================== HOME ===================== -->
   <main id="page-home" class="page">
     <!-- HERO -->
-    <section style="position: relative; min-height: 86vh; display: flex; align-items: flex-end; overflow: hidden; background-color: #14281F;">
+    <section class="hero" style="position: relative; display: flex; align-items: flex-end; overflow: hidden; background-color: #14281F;">
+      <div style="position: absolute; inset: 0; background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABMNDhEODBMRDxEVFBMXHTAfHRoaHToqLCMwRT1JR0Q9Q0FMVm1dTFFoUkFDX4JgaHF1e3x7SlyGkIV3j214e3b/2wBDARQVFR0ZHTgfHzh2T0NPdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnb/wAARCAAxACgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDXj4jFNZqrpKRGM1IUbaG7GocirCE00mpGiZcE96sLApi3MaVwsZV6c2r/AEoqW/UfZXwOKKpMTCQgW+fapbacyRqpPArPuZGe1+Tg1nxXM8By2cVFi7nSSsw96dvZo9p4zWPb6uxU7xz2q7a3TTcsABRYB98Ntk4J7UVBqF5E0LxhstiiqRLOen+0Mw2liK0IEmmRVkjAUVfjtVRQ2KlkcBBgDNOTCMSq9pGEO0c4rJlWaJsIzA1ubvWsy/vo4plVQC3epi7suSSVyCOJxG7vnOKK0jibTzIBjiiqINA/8e4qtRRUyLiI33TXL3v/AB/fjRRRDcKmx0dt/wAgg/SiiiqM+h//2Q=='); background-size: cover; background-position: center; filter: blur(16px); transform: scale(1.12);"></div>
       <div style="position: absolute; inset: 0; background-image: url('images/interior-1.jpg'); background-size: cover; background-position: center;"></div>
       <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="images/interior-1.jpg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s ease;">
         <source src="videos/hero.mp4" type="video/mp4">
