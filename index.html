@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Экспресс Азия Кафе — Уйгурская кухня в Барнауле</title>
+<meta name="description" content="Уйгурское кафе «Экспресс Азия» в Барнауле: лагман, куырдак, самса, манты. Бронирование столика онлайн, доставка по городу, 9:00–21:00 ежедневно. +7 (3852) 48‑38‑38.">
+<meta name="theme-color" content="#1E5A48">
+<link rel="canonical" href="https://express-asia.ru/">
+
+<!-- Favicon: монограмма «А» в фирменных цветах (inline SVG, работает офлайн) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E5A48'/%3E%3Ccircle cx='32' cy='27' r='15' fill='%23BE8A4A'/%3E%3Ctext x='32' y='34' text-anchor='middle' font-size='20' font-weight='700' fill='%23F4EEE3' font-family='Georgia,serif'%3E%D0%90%3C/text%3E%3Ctext x='32' y='52' text-anchor='middle' font-size='8' fill='%23E7D3B3' font-family='Arial,sans-serif'%3E%D0%90%D0%97%D0%98%D0%AF%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant">
+<meta property="og:site_name" content="Экспресс Азия Кафе">
+<meta property="og:title" content="Экспресс Азия Кафе — уйгурская кухня в Барнауле">
+<meta property="og:description" content="Лагман, куырдак, самса, манты. Бронь столика онлайн и доставка по городу. 9:00–21:00 ежедневно.">
+<meta property="og:image" content="images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://express-asia.ru/">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Экспресс Азия Кафе — уйгурская кухня в Барнауле">
+<meta name="twitter:description" content="Лагман, куырдак, самса, манты. Бронь столика онлайн и доставка по городу.">
+<meta name="twitter:image" content="images/og.jpg">
+
+<!-- Schema.org: локальный бизнес (ресторан) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Экспресс Азия Кафе",
+  "description": "Уйгурская кухня в Барнауле: лагман, куырдак, самса, манты. Бронирование и доставка.",
+  "servesCuisine": ["Уйгурская", "Среднеазиатская"],
+  "priceRange": "₽₽",
+  "image": "images/og.jpg",
+  "telephone": "+7-3852-48-38-38",
+  "url": "https://express-asia.ru/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Барнаул",
+    "addressCountry": "RU"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "09:00",
+    "closes": "21:00"
+  },
+  "acceptsReservations": "True"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+  ::selection { background: #1E5A48; color: #FBF8F1; }
+  @keyframes azFade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  input, button, textarea, select { font-family: inherit; }
+
+  #app { font-family: 'Manrope', sans-serif; color: #2A2620; background: #F4EEE3; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+
+  .nav-link:hover { color: #1E5A48 !important; }
+  .btn-header:hover { background: #16453A !important; }
+  .btn-hero-gold:hover { background: #cf9a58 !important; }
+  .btn-hero-ghost:hover { background: rgba(244,238,227,.18) !important; }
+  .btn-outline:hover { background: #1E5A48 !important; color: #FBF8F1 !important; }
+  .btn-solid:hover { background: #16453A !important; }
+  .footer-link:hover { color: #F4EEE3 !important; }
+
+  .page { animation: azFade .4s ease both; }
+  [hidden] { display: none !important; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .page { animation: none !important; }
+    #heroVideo { display: none !important; }
+    * { transition-duration: .001ms !important; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ===================== HEADER ===================== -->
+  <header style="position: sticky; top: 0; z-index: 50; background: rgba(244,238,227,.86); backdrop-filter: blur(12px); border-bottom: 1px solid #E6DECF;">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div data-go="home" style="cursor: pointer; display: flex; align-items: center;">
+        <img src="images/logo.jpg" alt="Азия — экспресс кафе" style="height: 64px; width: auto; display: block;">
+      </div>
+
+      <nav class="nav-desktop" style="display: flex; align-items: center; gap: 30px;">
+        <span class="nav-link" data-go="home"     style="font-size: 14px; font-weight: 600; cursor: pointer; color: #2A2620;">Главная</span>
+        <span class="nav-link" data-go="menu"     style="font-size: 14px; font-weight: 600; cursor: pointer; color: #2A2620;">Меню</span>
+        <span class="nav-link" data-go="booking"  style="font-size: 14px; font-weight: 600; cursor: pointer; color: #2A2620;">Бронирование</span>
+        <span class="nav-link" data-go="contacts" style="font-size: 14px; font-weight: 600; cursor: pointer; color: #2A2620;">Контакты</span>
+      </nav>
+      <div class="nav-desktop" style="display: flex; align-items: center; gap: 16px;">
+        <a href="tel:+73852483838" style="font-size: 14px; font-weight: 700; color: #1E5A48; text-decoration: none; white-space: nowrap;">+7 (3852) 48‑38‑38</a>
+        <button class="btn-header" data-go="booking" style="border: none; background: #1E5A48; color: #FBF8F1; font-size: 13px; font-weight: 700; padding: 11px 20px; border-radius: 999px; cursor: pointer;">Забронировать</button>
+      </div>
+
+      <button id="navToggle" class="nav-mobile" style="border: 1px solid #1E5A48; background: transparent; color: #1E5A48; width: 44px; height: 44px; border-radius: 12px; cursor: pointer; font-size: 18px; align-items: center; justify-content: center;">☰</button>
+    </div>
+
+    <div id="mobileNav" hidden style="border-top: 1px solid #E6DECF; background: #F4EEE3; padding: 8px 24px 16px; flex-direction: column; gap: 4px;">
+      <span data-go="home"     style="padding: 12px 4px; font-weight: 600; border-bottom: 1px solid #EBE4D6; cursor: pointer;">Главная</span>
+      <span data-go="menu"     style="padding: 12px 4px; font-weight: 600; border-bottom: 1px solid #EBE4D6; cursor: pointer;">Меню</span>
+      <span data-go="booking"  style="padding: 12px 4px; font-weight: 600; border-bottom: 1px solid #EBE4D6; cursor: pointer;">Бронирование</span>
+      <span data-go="contacts" style="padding: 12px 4px; font-weight: 600; cursor: pointer;">Контакты</span>
+      <button data-go="booking" style="margin-top: 10px; border: none; background: #1E5A48; color: #FBF8F1; font-size: 14px; font-weight: 700; padding: 13px; border-radius: 999px; cursor: pointer;">Забронировать столик</button>
+    </div>
+  </header>
+
+  <!-- ===================== HOME ===================== -->
+  <main id="page-home" class="page">
+    <!-- HERO -->
+    <section style="position: relative; min-height: 86vh; display: flex; align-items: flex-end; overflow: hidden; background-color: #14281F;">
+      <div style="position: absolute; inset: 0; background-image: url('images/interior-1.jpg'); background-size: cover; background-position: center;"></div>
+      <video id="heroVideo" autoplay muted loop playsinline preload="auto" poster="images/interior-1.jpg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .6s ease;">
+        <source src="videos/hero.mp4" type="video/mp4">
+      </video>
+      <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(20,40,33,.82), rgba(20,40,33,.35)), linear-gradient(to top, rgba(20,40,33,.65), transparent 45%);"></div>
+      <div style="position: relative; max-width: 1180px; margin: 0 auto; width: 100%; padding: 64px 24px 72px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(244,238,227,.16); border: 1px solid rgba(244,238,227,.35); color: #F4EEE3; padding: 7px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: 1px; backdrop-filter: blur(4px);">УЙГУРСКАЯ КУХНЯ · БАРНАУЛ</div>
+        <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; color: #FBF8F1; font-size: clamp(40px, 7vw, 78px); line-height: 1.02; margin: 18px 0 0; max-width: 760px; text-wrap: balance;">Вкус Востока<br>в сердце города</h1>
+        <p style="color: rgba(251,248,241,.85); font-size: clamp(16px, 2vw, 20px); max-width: 540px; margin: 22px 0 0; line-height: 1.55;">Уйгурская кухня, после которой уходят сытыми и довольными.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px;">
+          <button class="btn-hero-gold" data-go="booking" style="border: none; background: #BE8A4A; color: #2A2620; font-size: 15px; font-weight: 700; padding: 16px 30px; border-radius: 999px; cursor: pointer; box-shadow: 0 12px 30px rgba(190,138,74,.4);">Забронировать столик</button>
+          <button class="btn-hero-ghost" data-go="menu" style="border: 1px solid rgba(244,238,227,.6); background: rgba(244,238,227,.08); color: #F4EEE3; font-size: 15px; font-weight: 700; padding: 16px 30px; border-radius: 999px; cursor: pointer; backdrop-filter: blur(4px);">Смотреть меню</button>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 28px; margin-top: 44px; color: #F4EEE3;">
+          <div><div style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700;">9:00–21:00</div><div style="font-size: 12px; letter-spacing: 1px; opacity: .8; text-transform: uppercase;">ежедневно</div></div>
+          <div style="width: 1px; background: rgba(244,238,227,.3);"></div>
+          <div><div style="font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 700;">~40 мин</div><div style="font-size: 12px; letter-spacing: 1px; opacity: .8; text-transform: uppercase;">доставка по городу</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ХИТЫ МЕНЮ -->
+    <section style="max-width: 1180px; margin: 0 auto; padding: 84px 24px;">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 38px;">
+        <div>
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">Хиты кухни</div>
+          <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(32px, 5vw, 52px); margin: 8px 0 0; color: #1E5A48;">Что заказывают чаще всего</h2>
+        </div>
+        <button class="btn-outline" data-go="menu" style="border: 1px solid #1E5A48; background: transparent; color: #1E5A48; font-size: 14px; font-weight: 700; padding: 13px 24px; border-radius: 999px; cursor: pointer; white-space: nowrap;">Всё меню →</button>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(248px, 1fr)); gap: 22px;">
+        <div style="background: #FFFFFF; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 40px rgba(42,38,32,.08);">
+          <div style="height: 200px; background-image: url('images/lagman.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 20px 20px 22px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin: 0;">Лагман</h3><span style="font-weight: 700; color: #1E5A48; white-space: nowrap;">480 ₽</span></div>
+            <p style="font-size: 14px; color: #7A7164; line-height: 1.5; margin: 8px 0 0;">Тянутая лапша с говядиной, овощами и насыщенным острым бульоном.</p>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 40px rgba(42,38,32,.08);">
+          <div style="height: 200px; background-image: url('images/kuyrdak.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 20px 20px 22px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin: 0;">Куырдак</h3><span style="font-weight: 700; color: #1E5A48; white-space: nowrap;">590 ₽</span></div>
+            <p style="font-size: 14px; color: #7A7164; line-height: 1.5; margin: 8px 0 0;">Жаркое из говядины с болгарским перцем на раскалённой сковороде.</p>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 40px rgba(42,38,32,.08);">
+          <div style="height: 200px; background-image: url('images/samsa.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 20px 20px 22px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin: 0;">Самса</h3><span style="font-weight: 700; color: #1E5A48; white-space: nowrap;">120 ₽</span></div>
+            <p style="font-size: 14px; color: #7A7164; line-height: 1.5; margin: 8px 0 0;">Слоёная самса с сочной говядиной из тандыра, с кунжутом.</p>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 20px; overflow: hidden; box-shadow: 0 14px 40px rgba(42,38,32,.08);">
+          <div style="height: 200px; background-image: url('images/manti.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="padding: 20px 20px 22px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; margin: 0;">Манты</h3><span style="font-weight: 700; color: #1E5A48; white-space: nowrap;">450 ₽</span></div>
+            <p style="font-size: 14px; color: #7A7164; line-height: 1.5; margin: 8px 0 0;">Сочные манты на пару с рубленым мясом и луком. Подаём со сметаной.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- О КАФЕ / ИНТЕРЬЕР -->
+    <section style="max-width: 1180px; margin: 0 auto; padding: 84px 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center;">
+        <div>
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">О кафе</div>
+          <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(32px, 5vw, 52px); margin: 8px 0 0; color: #1E5A48; line-height: 1.05;">Место, куда хочется<br>вернуться завтра</h2>
+          <div style="margin: 22px 0 0; display: flex; flex-direction: column; gap: 10px;">
+            <p style="font-size: 17px; color: #5C5448; line-height: 1.55; margin: 0;">С коллегами в обед, с семьёй вечером.</p>
+            <p style="font-size: 17px; color: #5C5448; line-height: 1.55; margin: 0;">Встречи вкуснее за нашим столом.</p>
+            <p style="font-size: 17px; color: #5C5448; line-height: 1.55; margin: 0;">Тот случай, когда «давай где‑нибудь поедим» решается сразу.</p>
+          </div>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px;">
+            <div style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 14px; padding: 14px 18px;"><div style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: #1E5A48;">8</div><div style="font-size: 12px; color: #7A7164;">столиков в зале</div></div>
+            <div style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 14px; padding: 14px 18px;"><div style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: #1E5A48;">40+</div><div style="font-size: 12px; color: #7A7164;">блюд в меню</div></div>
+            <div style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 14px; padding: 14px 18px;"><div style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; color: #1E5A48;">★ 4.8</div><div style="font-size: 12px; color: #7A7164;">рейтинг гостей</div></div>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 14px; height: 440px;">
+          <div style="grid-row: span 2; border-radius: 18px; background-image: url('images/interior-2.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="border-radius: 18px; background-image: url('images/interior-3.jpg'); background-size: cover; background-position: center;"></div>
+          <div style="border-radius: 18px; background-image: url('images/exterior.jpg'); background-size: cover; background-position: center;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ДОСТАВКА -->
+    <section style="max-width: 1180px; margin: 0 auto; padding: 0 24px 90px;">
+      <div style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 26px; overflow: hidden; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div style="min-height: 280px; background-image: url('images/spread-1.jpg'); background-size: cover; background-position: center;"></div>
+        <div style="padding: 48px;">
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">Доставка</div>
+          <h2 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(30px, 4vw, 46px); margin: 10px 0 0; color: #1E5A48; line-height: 1.05;">Восточный стол<br>привезём к вам</h2>
+          <p style="font-size: 16px; color: #5C5448; line-height: 1.6; margin: 18px 0 0;">Доставляем горячие блюда по городу. Соберём комплексный обед или большой стол на компанию — всё свежее, в удобной упаковке.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;">
+            <a href="tel:+73852483838" style="border: none; background: #1E5A48; color: #FBF8F1; font-size: 14px; font-weight: 700; padding: 14px 26px; border-radius: 999px; cursor: pointer; text-decoration: none;">Заказать по телефону</a>
+            <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #1E5A48; padding: 14px 6px;">⏱ Среднее время — 40 мин</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== MENU ===================== -->
+  <main id="page-menu" class="page" hidden style="max-width: 1180px; margin: 0 auto; padding: 56px 24px 90px;">
+    <div style="text-align: center; margin-bottom: 44px;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">Меню</div>
+      <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(38px, 6vw, 64px); margin: 8px 0 0; color: #1E5A48;">Уйгурская кухня</h1>
+      <p style="color: #7A7164; font-size: 16px; margin: 12px auto 0; max-width: 520px;">Подборка наших блюд-хитов. Цены указаны за стандартную порцию.</p>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <!-- Супы -->
+      <div>
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;"><h2 style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: #2A2620; margin: 0;">Супы</h2><div style="flex: 1; height: 1px; background: #E6DECF;"></div></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/lagman.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Лагман</h3><span style="font-weight: 700; color: #1E5A48;">480 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Тянутая лапша, говядина, овощи, острый бульон.</p></div>
+          </div>
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/spread-1.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Шорпа</h3><span style="font-weight: 700; color: #1E5A48;">420 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Наваристый суп с мясом, картофелем и зеленью.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Горячее -->
+      <div>
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;"><h2 style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: #2A2620; margin: 0;">Горячее</h2><div style="flex: 1; height: 1px; background: #E6DECF;"></div></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/kuyrdak.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Куырдак</h3><span style="font-weight: 700; color: #1E5A48;">590 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Жаркое из говядины с перцем на горячей сковороде.</p></div>
+          </div>
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/manti.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Манты</h3><span style="font-weight: 700; color: #1E5A48;">450 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Сочные манты на пару с мясом и луком, со сметаной.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Выпечка и десерты -->
+      <div>
+        <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 18px;"><h2 style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: #2A2620; margin: 0;">Выпечка и десерты</h2><div style="flex: 1; height: 1px; background: #E6DECF;"></div></div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px;">
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/samsa.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Самса</h3><span style="font-weight: 700; color: #1E5A48;">120 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Слоёная самса с говядиной из тандыра, с кунжутом.</p></div>
+          </div>
+          <div style="display: flex; gap: 16px; background: #FFFFFF; border-radius: 18px; padding: 14px; box-shadow: 0 10px 30px rgba(42,38,32,.06);">
+            <div style="width: 96px; height: 96px; border-radius: 14px; flex-shrink: 0; background-image: url('images/snack.jpg'); background-size: cover; background-position: center;"></div>
+            <div style="flex: 1;"><div style="display: flex; justify-content: space-between; gap: 10px;"><h3 style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; margin: 0;">Восточные сладости</h3><span style="font-weight: 700; color: #1E5A48;">180 ₽</span></div><p style="font-size: 13px; color: #7A7164; margin: 6px 0 0; line-height: 1.45;">Хрустящие медовые сладости к чаю.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 56px;">
+      <button class="btn-solid" data-go="booking" style="border: none; background: #1E5A48; color: #FBF8F1; font-size: 15px; font-weight: 700; padding: 16px 34px; border-radius: 999px; cursor: pointer;">Забронировать столик</button>
+    </div>
+  </main>
+
+  <!-- ===================== BOOKING ===================== -->
+  <main id="page-booking" class="page" hidden style="max-width: 1180px; margin: 0 auto; padding: 56px 24px 90px;">
+    <div style="text-align: center; margin-bottom: 40px;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">Бронирование</div>
+      <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(36px, 6vw, 60px); margin: 8px 0 0; color: #1E5A48;">Выберите столик в зале</h1>
+      <p style="color: #7A7164; font-size: 16px; margin: 12px auto 0; max-width: 540px;">Нажмите на свободный столик на схеме, заполните данные и подтвердите бронь.</p>
+    </div>
+
+    <div id="bookingGrid" style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: start;">
+      <!-- FLOOR PLAN -->
+      <div style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 24px; padding: 20px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
+          <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 700; margin: 0; color: #2A2620;">Схема зала</h2>
+          <div style="display: flex; gap: 14px; font-size: 12px; color: #5C5448; flex-wrap: wrap;">
+            <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg,#D2A765,#B8843F);"></span>свободен</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 16px; height: 16px; border-radius: 50%; background: linear-gradient(135deg,#D2A765,#B8843F); box-shadow: 0 0 0 2px #1E5A48;"></span>выбран</span>
+            <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #CFC6B4;"></span>занят</span>
+          </div>
+        </div>
+
+        <div id="floorPlan" style="position: relative; width: 100%; aspect-ratio: 5 / 4; border-radius: 16px; background-color: #EFE7D8; background-image: repeating-linear-gradient(0deg, rgba(0,0,0,.035) 0 1px, transparent 1px 56px), repeating-linear-gradient(90deg, rgba(0,0,0,.035) 0 1px, transparent 1px 56px); overflow: hidden; border: 1px solid #E1D8C6;">
+          <div style="position: absolute; top: 0; left: 0; right: 0; height: 9%; background: #E3D9C6; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #9C9180; font-weight: 700;">стена с арками · логотип «АЗИЯ»</div>
+          <div style="position: absolute; left: 4%; top: 13%; width: 30%; height: 13%; border-radius: 10px; background: #DCEAE2; border: 1px dashed #1E5A48; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #1E5A48;">Бар · касса</div>
+          <div style="position: absolute; left: 3%; bottom: 4%; font-size: 11px; font-weight: 700; color: #9C9180; letter-spacing: 1px;">ВХОД ⟶</div>
+          <!-- tables injected here -->
+        </div>
+        <p style="font-size: 12px; color: #9C9180; margin: 12px 4px 0; text-align: center;">Столики №3 и №7 уже заняты на это время — выберите другой.</p>
+      </div>
+
+      <!-- FORM -->
+      <div style="background: #FFFFFF; border: 1px solid #E6DECF; border-radius: 24px; padding: 26px; box-shadow: 0 16px 44px rgba(42,38,32,.08); position: sticky; top: 92px;">
+        <!-- CONFIRMED -->
+        <div id="bookingConfirmed" hidden style="text-align: center; padding: 20px 0;">
+          <div style="width: 68px; height: 68px; border-radius: 50%; background: #1E5A48; color: #FBF8F1; display: flex; align-items: center; justify-content: center; font-size: 34px; margin: 0 auto;">✓</div>
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 700; margin: 18px 0 0; color: #1E5A48;">Столик забронирован!</h3>
+          <p id="confirmSummary" style="font-size: 15px; color: #5C5448; line-height: 1.55; margin: 12px 0 0;"></p>
+          <p id="confirmPhone" style="font-size: 13px; color: #9C9180; margin: 14px 0 0;"></p>
+          <button id="resetBooking" style="margin-top: 22px; border: 1px solid #1E5A48; background: transparent; color: #1E5A48; font-size: 14px; font-weight: 700; padding: 13px 26px; border-radius: 999px; cursor: pointer;">Забронировать ещё</button>
+        </div>
+
+        <!-- FORM -->
+        <div id="bookingForm">
+          <div id="selBox" style="background: #FBF8F1; border: 1px solid #E6DECF; border-radius: 14px; padding: 14px 16px; display: flex; align-items: center; gap: 14px;">
+            <div id="selBadge" style="width: 46px; height: 46px; border-radius: 12px; background: #1E5A48; color: #FBF8F1; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: 20px; flex-shrink: 0;">—</div>
+            <div id="selText" style="font-size: 14px; color: #2A2620; font-weight: 600;">Выберите столик на схеме слева</div>
+          </div>
+
+          <div style="margin-top: 20px;">
+            <label style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7A7164;">Дата</label>
+            <input id="fDate" type="date" style="width: 100%; margin-top: 8px; padding: 13px 14px; border: 1px solid #E6DECF; border-radius: 12px; font-size: 15px; color: #2A2620; background: #FBF8F1;">
+          </div>
+
+          <div style="margin-top: 18px;">
+            <label style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7A7164;">Время</label>
+            <div id="timeChips" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;"></div>
+          </div>
+
+          <div style="margin-top: 18px;">
+            <label style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7A7164;">Гостей</label>
+            <div style="display: flex; align-items: center; gap: 16px; margin-top: 8px;">
+              <button id="decGuests" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #E6DECF; background: #FBF8F1; font-size: 22px; cursor: pointer; color: #1E5A48;">−</button>
+              <span id="guestsVal" style="font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 700; min-width: 28px; text-align: center;">2</span>
+              <button id="incGuests" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #E6DECF; background: #FBF8F1; font-size: 22px; cursor: pointer; color: #1E5A48;">+</button>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px;">
+            <label style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7A7164;">Имя</label>
+            <input id="fName" type="text" placeholder="Ваше имя" style="width: 100%; margin-top: 8px; padding: 13px 14px; border: 1px solid #E6DECF; border-radius: 12px; font-size: 15px; color: #2A2620; background: #FBF8F1;">
+          </div>
+
+          <div style="margin-top: 18px;">
+            <label style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #7A7164;">Телефон</label>
+            <input id="fPhone" type="tel" placeholder="+7 (___) ___‑__‑__" style="width: 100%; margin-top: 8px; padding: 13px 14px; border: 1px solid #E6DECF; border-radius: 12px; font-size: 15px; color: #2A2620; background: #FBF8F1;">
+          </div>
+
+          <button id="confirmBtn" style="width:100%;margin-top:22px;border:none;font-size:15px;font-weight:700;padding:16px;border-radius:14px;transition:all .18s ease;background:#E6DECF;color:#A99F8C;cursor:not-allowed;">Сначала выберите столик</button>
+          <p style="font-size: 11px; color: #9C9180; line-height: 1.45; margin: 12px 2px 0; text-align: center;">Нажимая кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#" style="color: #1E5A48;">политикой конфиденциальности</a>.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== CONTACTS ===================== -->
+  <main id="page-contacts" class="page" hidden style="max-width: 1180px; margin: 0 auto; padding: 56px 24px 90px;">
+    <div style="text-align: center; margin-bottom: 44px;">
+      <div style="font-size: 12px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: #BE8A4A;">Контакты</div>
+      <h1 style="font-family: 'Cormorant Garamond', serif; font-weight: 700; font-size: clamp(38px, 6vw, 64px); margin: 8px 0 0; color: #1E5A48;">Как нас найти</h1>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #FFFFFF; border: 1px solid #E6DECF; border-radius: 18px; padding: 24px;">
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #BE8A4A;">Телефон</div>
+          <a href="tel:+73852483838" style="display: block; font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: #1E5A48; text-decoration: none; margin-top: 6px;">+7 (3852) 48‑38‑38</a>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E6DECF; border-radius: 18px; padding: 24px;">
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #BE8A4A;">Часы работы</div>
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 700; color: #2A2620; margin-top: 6px;">9:00 – 21:00</div>
+          <div style="font-size: 14px; color: #7A7164;">ежедневно, без выходных</div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E6DECF; border-radius: 18px; padding: 24px;">
+          <div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #BE8A4A;">Адрес</div>
+          <div style="font-size: 18px; font-weight: 600; color: #2A2620; margin-top: 6px;">г. Барнаул</div>
+          <div style="font-size: 14px; color: #7A7164;">точный адрес уточняется</div>
+          <button class="btn-solid" data-go="booking" style="margin-top: 18px; border: none; background: #1E5A48; color: #FBF8F1; font-size: 14px; font-weight: 700; padding: 13px 24px; border-radius: 999px; cursor: pointer;">Забронировать столик</button>
+        </div>
+      </div>
+      <div style="border-radius: 18px; overflow: hidden; min-height: 420px; background-image: linear-gradient(rgba(20,40,33,.12), rgba(20,40,33,.12)), url('images/exterior.jpg'); background-size: cover; background-position: center; border: 1px solid #E6DECF; display: flex; align-items: flex-end;">
+        <div style="margin: 18px; background: rgba(244,238,227,.92); border-radius: 14px; padding: 14px 18px; backdrop-filter: blur(4px);">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 700; color: #1E5A48;">Экспресс Азия Кафе</div>
+          <div style="font-size: 13px; color: #5C5448;">Фасад с вывеской «ЭКСПРЕСС · АЗИЯ · КАФЕ»</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer style="background: #16453A; color: rgba(244,238,227,.8);">
+    <div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 36px;">
+      <div>
+        <div style="background: #F4EEE3; border-radius: 16px; padding: 14px 20px; display: inline-block;">
+          <img src="images/logo.jpg" alt="Азия — экспресс кафе" style="height: 78px; width: auto; display: block;">
+        </div>
+        <p style="font-size: 13px; line-height: 1.6; margin: 16px 0 0; max-width: 260px;">Уйгурская кухня в светлом современном зале. Барнаул, 9:00–21:00 ежедневно.</p>
+      </div>
+      <div>
+        <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #BE8A4A; margin-bottom: 14px;">Разделы</div>
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px;">
+          <span class="footer-link" data-go="home"     style="cursor: pointer;">Главная</span>
+          <span class="footer-link" data-go="menu"     style="cursor: pointer;">Меню</span>
+          <span class="footer-link" data-go="booking"  style="cursor: pointer;">Бронирование</span>
+          <span class="footer-link" data-go="contacts" style="cursor: pointer;">Контакты</span>
+        </div>
+      </div>
+      <div>
+        <div style="font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #BE8A4A; margin-bottom: 14px;">Контакты</div>
+        <a href="tel:+73852483838" style="display: block; font-size: 20px; font-weight: 700; color: #F4EEE3; text-decoration: none;">+7 (3852) 48‑38‑38</a>
+        <div style="font-size: 14px; margin-top: 10px;">Ежедневно 9:00 – 21:00</div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid rgba(244,238,227,.14); padding: 18px 24px; text-align: center; font-size: 12px; color: rgba(244,238,227,.5);">© 2026 Экспресс Азия Кафе · Прототип сайта</div>
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var OCCUPIED = [3, 7];
+  var TIMES = ['12:00', '14:00', '16:00', '18:00', '19:30', '21:00'];
+
+  var state = {
+    page: 'home',
+    navOpen: false,
+    selectedTable: null,
+    confirmed: false,
+    form: { date: '', time: '18:00', guests: 2, name: '', phone: '' }
+  };
+
+  // ---------- helpers ----------
+  function $(sel) { return document.querySelector(sel); }
+  function $all(sel) { return Array.prototype.slice.call(document.querySelectorAll(sel)); }
+  function isMobile() { return window.innerWidth < 760; }
+
+  function baseTables() {
+    return [
+      { id: 1, x: 58, y: 11, w: 34, h: 20, round: false, seats: 4 },
+      { id: 2, x: 58, y: 35, w: 34, h: 20, round: false, seats: 4 },
+      { id: 3, x: 39, y: 11, w: 18, h: 22, round: true,  seats: 2 },
+      { id: 4, x: 34, y: 36, w: 24, h: 30, round: true,  seats: 4 },
+      { id: 5, x: 3,  y: 38, w: 30, h: 19, round: false, seats: 4 },
+      { id: 6, x: 6,  y: 64, w: 23, h: 28, round: true,  seats: 4 },
+      { id: 7, x: 62, y: 63, w: 21, h: 26, round: true,  seats: 3 },
+      { id: 8, x: 36, y: 70, w: 19, h: 23, round: true,  seats: 2 }
+    ];
+  }
+
+  function chairsFor(round, seats) {
+    if (!round) {
+      if (seats >= 4) return [ {cx:0.33,cy:0.12}, {cx:0.67,cy:0.12}, {cx:0.33,cy:0.88}, {cx:0.67,cy:0.88} ];
+      return [ {cx:0.33,cy:0.12}, {cx:0.67,cy:0.12} ];
+    }
+    if (seats <= 2) return [ {cx:0.5,cy:0.1}, {cx:0.5,cy:0.9} ];
+    if (seats === 3) return [ {cx:0.5,cy:0.09}, {cx:0.16,cy:0.82}, {cx:0.84,cy:0.82} ];
+    return [ {cx:0.5,cy:0.09}, {cx:0.91,cy:0.5}, {cx:0.5,cy:0.91}, {cx:0.09,cy:0.5} ];
+  }
+
+  // ---------- navigation ----------
+  function go(page) {
+    state.page = page;
+    state.navOpen = false;
+    renderRoute();
+    window.scrollTo(0, 0);
+  }
+
+  function renderRoute() {
+    ['home', 'menu', 'booking', 'contacts'].forEach(function (p) {
+      var el = document.getElementById('page-' + p);
+      if (el) el.hidden = (p !== state.page);
+    });
+    // mobile nav visibility
+    $('#mobileNav').hidden = !state.navOpen;
+    $('#mobileNav').style.display = state.navOpen ? 'flex' : 'none';
+  }
+
+  function applyResponsive() {
+    var mobile = isMobile();
+    $all('.nav-desktop').forEach(function (el) { el.style.display = mobile ? 'none' : 'flex'; });
+    $('#navToggle').style.display = mobile ? 'flex' : 'none';
+    if (!mobile) { state.navOpen = false; }
+    $('#mobileNav').hidden = !state.navOpen;
+    $('#mobileNav').style.display = state.navOpen ? 'flex' : 'none';
+    var grid = $('#bookingGrid');
+    if (grid) grid.style.gridTemplateColumns = mobile ? '1fr' : '1.4fr 1fr';
+  }
+
+  // ---------- booking: floor plan ----------
+  function renderFloorPlan() {
+    var plan = $('#floorPlan');
+    if (!plan) return;
+    // remove previously injected tables
+    $all('.az-table').forEach(function (el) { el.remove(); });
+
+    baseTables().forEach(function (t) {
+      var status = OCCUPIED.indexOf(t.id) !== -1 ? 'occupied'
+                 : (state.selectedTable === t.id ? 'selected' : 'free');
+
+      var btn = document.createElement('button');
+      btn.className = 'az-table';
+      btn.style.cssText = 'position:absolute;left:' + t.x + '%;top:' + t.y + '%;width:' + t.w + '%;height:' + t.h + '%;'
+        + 'background:transparent;border:none;padding:0;transition:transform .18s ease;'
+        + (status === 'occupied' ? 'cursor:not-allowed;' : 'cursor:pointer;')
+        + (status === 'selected' ? 'transform:scale(1.06);z-index:7;' : 'z-index:2;');
+
+      // chairs
+      var chairColor = status === 'occupied' ? '#C2B8A4' : '#3F5B50';
+      var cw = t.round ? 0.26 : 0.2;
+      var chh = t.round ? 0.26 : 0.34;
+      chairsFor(t.round, t.seats).forEach(function (c) {
+        var left = (c.cx - cw / 2) * 100;
+        var top = (c.cy - chh / 2) * 100;
+        var sp = document.createElement('span');
+        sp.style.cssText = 'position:absolute;left:' + left + '%;top:' + top + '%;width:' + (cw * 100) + '%;height:' + (chh * 100) + '%;'
+          + 'border-radius:7px;background:' + chairColor + ';box-shadow:inset 0 -3px 0 rgba(0,0,0,.18),0 2px 4px rgba(0,0,0,.18);z-index:1;';
+        btn.appendChild(sp);
+      });
+
+      // surface
+      var surfL = t.round ? 20 : 13;
+      var surfT = t.round ? 20 : 26;
+      var surfW = t.round ? 60 : 74;
+      var surfH = t.round ? 60 : 48;
+      var surfFill, numColor, surfShadow;
+      if (status === 'occupied') {
+        surfFill = 'linear-gradient(135deg,#D8D0C0,#C2B8A4)'; numColor = '#9A9078';
+        surfShadow = '0 2px 6px rgba(0,0,0,.12)';
+      } else if (status === 'selected') {
+        surfFill = 'linear-gradient(135deg,#D9AE6C,#B8843F)'; numColor = '#34250F';
+        surfShadow = '0 0 0 4px #1E5A48,0 0 0 8px rgba(190,138,74,.45),0 10px 22px rgba(30,90,72,.3)';
+      } else {
+        surfFill = 'linear-gradient(135deg,#D2A765,#B8843F)'; numColor = '#3A2A12';
+        surfShadow = '0 4px 12px rgba(42,38,32,.18)';
+      }
+      var surface = document.createElement('span');
+      surface.style.cssText = 'position:absolute;left:' + surfL + '%;top:' + surfT + '%;width:' + surfW + '%;height:' + surfH + '%;'
+        + 'border-radius:' + (t.round ? '50%' : '12px') + ';background:' + surfFill + ';box-shadow:' + surfShadow + ';'
+        + 'display:flex;flex-direction:column;align-items:center;justify-content:center;color:' + numColor + ';'
+        + "font-family:'Manrope',sans-serif;border:1px solid rgba(90,60,20,.18);";
+      var num = document.createElement('span');
+      num.style.cssText = "font-family:'Cormorant Garamond',serif;font-size:clamp(15px,2.2vw,24px);line-height:1;font-weight:700;";
+      num.textContent = '№' + t.id;
+      surface.appendChild(num);
+      btn.appendChild(surface);
+
+      btn.addEventListener('click', function () { selectTable(t.id); });
+      plan.appendChild(btn);
+    });
+  }
+
+  function selectTable(id) {
+    if (OCCUPIED.indexOf(id) !== -1) return;
+    state.selectedTable = id;
+    state.confirmed = false;
+    renderBooking();
+  }
+
+  // ---------- booking: form ----------
+  function renderTimeChips() {
+    var wrap = $('#timeChips');
+    wrap.innerHTML = '';
+    TIMES.forEach(function (tm) {
+      var active = state.form.time === tm;
+      var b = document.createElement('button');
+      b.textContent = tm;
+      b.style.cssText = 'padding:10px 16px;border-radius:999px;font-size:14px;font-weight:700;cursor:pointer;transition:all .15s ease;'
+        + (active ? 'background:#1E5A48;color:#FBF8F1;border:1px solid #1E5A48;'
+                  : 'background:#FBF8F1;color:#2A2620;border:1px solid #E6DECF;');
+      b.addEventListener('click', function () { state.form.time = tm; renderTimeChips(); renderConfirmBtn(); });
+      wrap.appendChild(b);
+    });
+  }
+
+  function canConfirm() {
+    var f = state.form;
+    return !!(state.selectedTable && f.name.trim() && f.phone.trim() && f.date && f.time);
+  }
+
+  function renderConfirmBtn() {
+    var btn = $('#confirmBtn');
+    var ok = canConfirm();
+    btn.style.cssText = 'width:100%;margin-top:22px;border:none;font-size:15px;font-weight:700;padding:16px;border-radius:14px;transition:all .18s ease;'
+      + (ok ? 'background:#BE8A4A;color:#2A2620;cursor:pointer;box-shadow:0 10px 24px rgba(190,138,74,.35);'
+            : 'background:#E6DECF;color:#A99F8C;cursor:not-allowed;');
+    btn.textContent = state.selectedTable ? ('Забронировать столик №' + state.selectedTable)
+                                          : 'Сначала выберите столик';
+  }
+
+  function renderSelBox() {
+    var selObj = baseTables().filter(function (t) { return t.id === state.selectedTable; })[0];
+    var box = $('#selBox');
+    if (selObj) {
+      $('#selBadge').textContent = '№' + selObj.id;
+      $('#selText').textContent = 'Столик №' + selObj.id + ' · до ' + selObj.seats + ' гостей';
+      box.style.background = '#F1F6F2';
+    } else {
+      $('#selBadge').textContent = '—';
+      $('#selText').textContent = 'Выберите столик на схеме слева';
+      box.style.background = '#FBF8F1';
+    }
+  }
+
+  function renderBooking() {
+    renderFloorPlan();
+    renderSelBox();
+    renderConfirmBtn();
+    $('#guestsVal').textContent = state.form.guests;
+    // confirmed vs form
+    $('#bookingConfirmed').hidden = !state.confirmed;
+    $('#bookingForm').hidden = state.confirmed;
+    if (state.confirmed) {
+      var selObj = baseTables().filter(function (t) { return t.id === state.selectedTable; })[0];
+      var f = state.form;
+      var datePretty = f.date ? f.date.split('-').reverse().join('.') : '';
+      $('#confirmSummary').textContent = selObj
+        ? ('Столик №' + selObj.id + ' · ' + datePretty + ' в ' + f.time + ' · ' + f.guests + ' гостей') : '';
+      $('#confirmPhone').textContent = 'Мы перезвоним для подтверждения по номеру ' + f.phone;
+    }
+  }
+
+  function confirmBooking() {
+    if (!canConfirm()) return;
+    state.confirmed = true;
+    renderBooking();
+    window.scrollTo(0, 0);
+  }
+
+  function resetBooking() {
+    state.confirmed = false;
+    state.selectedTable = null;
+    renderBooking();
+  }
+
+  // ---------- wiring ----------
+  function init() {
+    // today's date
+    var d = new Date();
+    state.form.date = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+
+    // nav links (header, mobile, footer)
+    $all('[data-go]').forEach(function (el) {
+      el.addEventListener('click', function () { go(el.getAttribute('data-go')); });
+    });
+
+    // mobile toggle
+    $('#navToggle').addEventListener('click', function () {
+      state.navOpen = !state.navOpen;
+      $('#mobileNav').hidden = !state.navOpen;
+      $('#mobileNav').style.display = state.navOpen ? 'flex' : 'none';
+    });
+
+    // booking form fields
+    $('#fDate').value = state.form.date;
+    $('#fDate').addEventListener('change', function (e) { state.form.date = e.target.value; renderConfirmBtn(); });
+    $('#fName').addEventListener('input', function (e) { state.form.name = e.target.value; renderConfirmBtn(); });
+    $('#fPhone').addEventListener('input', function (e) { state.form.phone = e.target.value; renderConfirmBtn(); });
+    $('#incGuests').addEventListener('click', function () { state.form.guests = Math.min(12, state.form.guests + 1); $('#guestsVal').textContent = state.form.guests; });
+    $('#decGuests').addEventListener('click', function () { state.form.guests = Math.max(1, state.form.guests - 1); $('#guestsVal').textContent = state.form.guests; });
+    $('#confirmBtn').addEventListener('click', confirmBooking);
+    $('#resetBooking').addEventListener('click', resetBooking);
+
+    window.addEventListener('resize', applyResponsive);
+
+    // hero video: reveal once it can play (falls back to interior photo if missing)
+    var hv = document.getElementById('heroVideo');
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (hv && !reduceMotion) {
+      var reveal = function () { hv.style.opacity = 1; };
+      hv.addEventListener('loadeddata', reveal);
+      hv.addEventListener('canplay', reveal);
+      var pp = hv.play();
+      if (pp && pp.catch) pp.catch(function () {});
+    } else if (hv) {
+      hv.removeAttribute('autoplay');
+      hv.pause();
+    }
+
+    renderTimeChips();
+    renderBooking();
+    applyResponsive();
+    renderRoute();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
